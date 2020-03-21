@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 struct student
@@ -79,7 +80,7 @@ void conversieCoadaVector(nodCoada **prim, nodCoada **ultim, student *vect, int 
 	}
 }
 
-void main()
+int main()
 {
 	int n;
 	printf("Nr. studenti=");
@@ -122,5 +123,7 @@ void main()
 	for(int i=0;i<nr;i++)
 		free(vect[i].nume);
 	free(vect);
+
+	return 0;
 
 }
